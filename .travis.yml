@@ -1,0 +1,14 @@
+sudo: required
+language: java
+jdk:
+- oraclejdk8
+env:
+  global:
+  - MVN_VERSION=3.3.9
+  - M2_HOME="$(pwd)/apache-maven-${MVN_VERSION}"
+  - COMMIT=${TRAVIS_COMMIT::8}
+install:
+- wget --quiet http://mirror.netcologne.de/apache.org/maven/maven-3/${MVN_VERSION}/binaries/apache-maven-${MVN_VERSION}-bin.tar.gz
+- tar xvzf apache-maven-${MVN_VERSION}-bin.tar.gz
+script:
+- ./apache-maven-${MVN_VERSION}/bin/mvn test
