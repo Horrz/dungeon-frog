@@ -1,5 +1,5 @@
 # dungeon-frog
-This is going to be a game about a frog looking for catholic people in a dungeon with rainbows and unicorns.
+This is going to be a game about a frog looking for people in a dungeon with rainbows and unicorns.
 
 ## Disclaimer
 The game is in very early development. Please keep that in mind when you using the software.
